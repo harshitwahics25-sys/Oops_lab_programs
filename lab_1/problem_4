@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class problem4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of terms: ");
+        int terms = sc.nextInt();
+
+        int firstNum = 0;
+        int secondNum = 1;
+
+        System.out.print("Fibonacci Series: ");
+        int a=-1;
+        int b=1;
+         int ans=0;
+        for(int i=0;i<terms;i++){
+             ans=a+b;
+           System.out.print(ans+" ");
+             
+            a=b;
+             b=ans;
+           }
+        System.out.println();
+          sc.close();
+} 
+}
+              
